@@ -1,0 +1,111 @@
+$font-mont : 'Montserrat', sans-serif;
+$font-openSan : 'Open Sans', sans-serif;
+$color:#8262b5;
+$width: 80%;
+@mixin transition($transition, $time){
+	transition: $transition $time;
+	-moz-transition: $transition $time;
+    -webkit-transition: $transition $time;
+    -o-transition: $transition $time;
+}
+.blog{
+	background: url('../images/background-blog.png') center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&_top{
+		padding: 80px 0 80px 0;
+		text-align: center;
+		.bottom{
+			position: relative;
+			&:before{
+				position: absolute;
+				content: "";
+				top: 60px;
+				left: 0; 
+				right: 0; 
+				margin-left: auto; 
+				margin-right: auto; 
+				width: 5%;
+				height: 2px;
+				background-color: $color;
+			}
+		}
+		&_text{
+			font-family: $font-mont;
+			font-weight: bold;
+		}
+	}
+	&_bot{
+		padding-bottom:112px;
+		width: $width;
+		margin: auto;
+		&_post{
+			&:hover{
+				img {
+					-webkit-filter: grayscale(0%);
+					filter: grayscale(0%);
+				}
+			}
+			img{
+				@include transition(grayscale, 0.3s);
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				width: 100%;
+			}
+			a{
+				color: #000;
+				font-weight: bold;
+				&:hover{
+					color: $color;
+				}
+			}
+			&_image{
+				position: relative;
+				&_date{
+					text-align: center;
+					color: white;
+					background-color: #a1d1dd;
+					position: absolute;
+					top: 22px;
+					left: 20px;
+					&_text{
+						border: 1px solid white;
+						font-family: $font-mont;
+						margin: 10px;
+    					padding: 3px 10px;
+					}
+					p{
+						margin-bottom: 0;
+					}
+				}
+			}
+			&_detail{
+				// overflow-y: scroll;
+				background-color: white;
+				&_content{
+					padding: 20px 20px 0 20px;
+				}
+				&_react{
+					padding: 0 20px 20px 20px;
+				}
+			}
+		}
+	}
+}
+// .slick-dots li.slick-active button:before{
+// 	color: $color!important;
+// 	opacity: 1!important;
+// 	font-size: 15px!important;
+// }
+.slick-dots li {
+	button:before{
+		color: $color!important;
+		opacity: 0.7!important;
+		font-size: 10px!important;
+	}
+	&.slick-active button:before{
+		color: $color!important;
+		opacity: 1!important;
+		font-size: 15px!important;
+	}
+}

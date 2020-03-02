@@ -1,0 +1,145 @@
+/*<-----------------------------------3.1 Home_page_content--------------------------------------------->*/
+$font-mont   : 'Montserrat', sans-serif;
+$font-openSan: 'Open Sans', sans-serif;
+$font-paci   : 'Pacifico';
+$color       :#8262b5;
+$color_star  : #f8bf15;
+$width       : 80%;
+@mixin btn-cart{
+	font-family: $font-mont;
+	position: absolute;
+	bottom: 3%;
+	left: 3%;
+	color: black;
+	background-color: white;
+	border-radius: 0;
+}
+.content{
+	margin: 30px auto 0 auto;
+	width: $width;
+	.banner{
+		width: 100%;
+		margin: 0 0 80px 0!important;
+		.button{
+			background-color: $color;
+			color: white;
+			border-radius: 0;
+		}
+		&_left{
+			padding-left: 0;
+			align-items: center;
+			position: relative;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			&_text{
+				float: right;
+				position: absolute;
+				right: 14%;
+    			bottom: 27%;
+    			span{
+    				font-family: $font-paci;
+    				font-size: 30px;
+    				display: block;
+    			}
+    			button{
+    				float: right;
+    			}
+			}
+		}
+		&_right{
+			padding-right: 0;
+			align-items: center;
+			img{
+				width: 100%;
+				margin: 0 0 30px 0;
+			}
+			&_bot{
+				position: relative;
+				.responsive{
+					display: none;
+				}
+				&_text{
+					span{
+						display: block;
+					}
+					position: absolute;
+					bottom: 36%;
+					left: 11%;
+					font-family: $font-mont;
+				}
+			}
+			
+		}
+	}
+	.shop{
+		&_top{
+			span{
+					font-size: 12px;
+					letter-spacing: 5px;
+				}
+			p{
+				font-weight: bold;
+				font-size: 24px;
+				letter-spacing: 1px;
+				position: relative;
+				display: block;
+				&:before{
+					position: absolute;
+					top: 50px;
+					content: "";
+					width: 5%;
+					height: 2px;
+					background-color: $color;
+				}
+			}
+			&_text{
+				font-family: $font-mont;
+			}
+		}
+		&_bot{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			&_item{
+				img{
+					width: 100%;
+				}
+				.image{
+					width: 100%;
+					position: relative;
+				}
+				button{
+					@include btn-cart;
+					&:hover{
+						color: $color;
+					}
+				}
+				.fa-star{
+					color: $color_star;
+				}
+				.link-item{
+					margin-top: 20px;
+					font-family: $font-mont;
+					font-weight: bold;
+					a{
+						color: #000;
+						&:hover{
+							color: $color;
+						}
+					}
+				}
+				.origin-price{
+					color: #999;
+					font-family: $font-openSan;
+					text-decoration: line-through;
+				}
+				.sale-price{
+					color: $color;
+					font-family: $font-openSan;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

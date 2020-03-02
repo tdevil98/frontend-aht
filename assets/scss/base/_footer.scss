@@ -1,0 +1,56 @@
+$font-mont : 'Montserrat', sans-serif;
+$font-openSan : 'Open Sans', sans-serif;
+$color: #828282;
+$hr: 1px solid $color;
+$width: 80%;
+
+.footer{
+	color: $color;
+	background: url('../images/backgound-footer.png') center center;
+	hr{
+		border-top: $hr;
+		margin-bottom: 30px;
+	}
+	&_top{
+		padding-top: 64px;
+		width: $width;
+		margin: 0 auto;
+		.title{
+			color: white;
+			margin-bottom: 30px;
+			font-weight: bold;
+			font-weight: $font-mont;
+		}
+		ul{
+			padding: 0;
+			list-style-type: none;
+			list-style-position: inside;
+			li{
+				padding-bottom: 20px;
+				a{
+					color: $color;
+					&:hover{
+						text-decoration: underline;
+						color: white;
+					}
+				}
+			}
+		}
+		i{
+			margin-right: 10px;
+		}
+	}
+	&_bot{
+		width: $width;
+		margin: 0 auto;
+		&_left{
+			float: left;
+		}
+		&_right{
+			float: right;
+			i{
+
+			}
+		}
+	}
+}
