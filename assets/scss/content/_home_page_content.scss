@@ -4,9 +4,9 @@ $font-openSan: 'Open Sans', sans-serif;
 $font-paci   : 'Pacifico';
 $color       :#8262b5;
 $color_star  : #f8bf15;
-$width       : 80%;
 @mixin btn-cart{
 	font-family: $font-mont;
+	font-size: 12px;
 	position: absolute;
 	bottom: 3%;
 	left: 3%;
@@ -16,9 +16,8 @@ $width       : 80%;
 }
 .content{
 	margin: 30px auto 0 auto;
-	width: $width;
 	.banner{
-		width: 100%;
+		padding: 0;
 		margin: 0 0 80px 0!important;
 		.button{
 			background-color: $color;
@@ -26,7 +25,6 @@ $width       : 80%;
 			border-radius: 0;
 		}
 		&_left{
-			padding-left: 0;
 			align-items: center;
 			position: relative;
 			img{
@@ -49,7 +47,6 @@ $width       : 80%;
 			}
 		}
 		&_right{
-			padding-right: 0;
 			align-items: center;
 			img{
 				width: 100%;
@@ -65,7 +62,7 @@ $width       : 80%;
 						display: block;
 					}
 					position: absolute;
-					bottom: 36%;
+					bottom: 15%;
 					left: 11%;
 					font-family: $font-mont;
 				}
@@ -74,6 +71,7 @@ $width       : 80%;
 		}
 	}
 	.shop{
+		padding: 0px;
 		&_top{
 			span{
 					font-size: 12px;

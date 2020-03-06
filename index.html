@@ -32,68 +32,72 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="header_bot">
-				<div class="header_bot_logo">
-					<a href="#"><img src="assets/images/logo.png" alt=""></a>
-				</div>
-				<div class="header_bot_menu">
-					<nav id="menu" class="menu">
-						<ul>
-							<li class="bars"><a href="javascript:void(0);" class="icon" onclick="responsive()" ><i class="fas fa-bars"></i></a></li>
-							<li><a href="#">HOME</a></li>
-							<li><a href="#">WOMEN</a></li>
-							<li><a href="#">MEN</a></li>
-							<li><a href="#">ABOUT US</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">COLLECTIONS</a></li>
-							<li><a href="#">CONTACT</a></li>
-							<li><a href="#"><i class="fas fa-search"></i></a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header_bot_right">
-					<a href="#"><i class="far fa-heart"></i></a>
-					<a href="#"><i class="fas fa-shopping-cart"></i></a>
-				</div>
+			<div class="container-fluid header_bot">
+				<nav class="navbar">
+			        <a href="#" class="header_bot_logo"><img src="assets/images/logo.png" alt=""></a>
+			        <input type="checkbox" id="chk">
+			        <label for="chk" class="show-menu-btn">
+				      <i class="fas fa-ellipsis-h"></i>
+				    </label>
+				    <ul class="menu">
+					    <a href="#">Home</a>
+					    <a href="#">Women</a>
+					    <a href="#">Men</a>
+					    <a href="#">About Us</a>
+					    <a href="#">Blog</a>
+					    <a href="#">Collections</a>
+					    <a href="#">Contact</a>
+					    <a href="#"><i class="fas fa-search"></i></a>
+					    <label for="chk" class="hide-menu-btn">
+					    	<i class="fas fa-times"></i>
+					    </label>
+				    </ul>
+				    <div class="header_bot_right">
+				    	<a href="#"><i class="far fa-heart"></i></a>
+						<a href="#"><i class="fas fa-shopping-cart"></i></a>
+				    </div>
+			    </nav>
 				<div class="clear"></div>
 			</div>
 		</div>
 	</header>
 	<hr>
-	<article>
-		<div class="content">
-			<section class="banner row">
-				<div class=" col-lg-8 col-sm-12 banner_left">
-					<img src="assets/images/ads_1.png" alt="ads 1">
-					<div class="banner_left_text">
-						<span>Two High-end Materials</span>
-						<button class="btn button">Shop Now</button>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-12 banner_right">
-					<div class="row">
-						<div class="col-sm-6 col-lg-12">
-							<img src="assets/images/ads_2.png" alt="ads 2">
+	<div class="container-fluid" >
+		<div class="content container">
+			<section class="banner container-fluid">
+				<div class="row">
+					<div class=" col-lg-8 col-sm-12 banner_left">
+						<img src="assets/images/ads_1.png" alt="ads 1">
+						<div class="banner_left_text">
+							<span>Two High-end Materials</span>
+							<button style="margin-top: 10px" class="btn button">Shop Now</button>
 						</div>
-						<div class="col-sm-6 col-lg-12 banner_right_bot">
-							<img class="responsive" style="margin-bottom: 0" src="assets/images/ads_3.png" alt="ads 3">
-							<img class="no-responsive" style="margin-bottom: 0" src="assets/images/ads_3_responsive.png" alt="ads 3">
-							<div class="banner_right_bot_text">
-								<span style="font-size: 16px; letter-spacing: 2px;">FOLIO</span>
-								<span style="font-weight: bold; font-size: 20px">BACKPACK</span>
-								<button class="btn button">Shop Now</button>
+					</div>
+					<div class="col-lg-4 col-sm-12 banner_right">
+						<div class="row">
+							<div class="col-sm-6 col-lg-12">
+								<img src="assets/images/ads_2.png" alt="ads 2">
+							</div>
+							<div class="col-sm-6 col-lg-12 banner_right_bot">
+								<img class="responsive" style="margin-bottom: 0" src="assets/images/ads_3.png" alt="ads 3">
+								<img class="no-responsive" style="margin-bottom: 0" src="assets/images/ads_3_responsive.png" alt="ads 3">
+								<div class="banner_right_bot_text">
+									<span style="font-size: 16px; letter-spacing: 2px;">FOLIO</span>
+									<span style="font-weight: bold; font-size: 20px">BACKPACK</span>
+									<button style="margin-top: 20px" class="btn button">Shop Now</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="shop">
+			<section class="shop container-fluid">
 				<div class="shop_top">
-					<span class="shop_top_text" style="color: #86b;">FRANCO</span>
+					<span class="shop_top_text" style="color: #86b; font-weight: bold">FRANCO</span>
 					<p class="shop_top_text">FEATURED ITEMS</p>
 				</div>
 				<div class="row shop_bot">
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_1.png" alt="product 1">
 							<button class="btn">ADD TO CART</button>
@@ -102,7 +106,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_2.png" alt="product 2">
 							<button class="btn">ADD TO CART</button>
@@ -111,7 +115,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_3.png" alt="product 3">
 							<button class="btn">ADD TO CART</button>
@@ -120,7 +124,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_4.png" alt="product 4">
 							<button class="btn">ADD TO CART</button>
@@ -131,7 +135,7 @@
 					</div>
 				</div>
 				<div class="row shop_bot">
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_5.png" alt="product 5">
 							<button class="btn">ADD TO CART</button>
@@ -140,7 +144,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_6.png" alt="product 6">
 							<button class="btn">ADD TO CART</button>
@@ -149,7 +153,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_7.png" alt="product 7">
 							<button class="btn">ADD TO CART</button>
@@ -158,7 +162,7 @@
 						<p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 						<p class="price"><span class="origin-price">$99.00</span> <span class="sale-price">$84.00</span></p>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-3 shop_bot_item">
+					<div class="col-sm-6 col-md-6 col-lg-3 shop_bot_item">
 						<div class="image">
 							<img src="assets/images/product_8.png" alt="product 8">
 							<button class="btn">ADD TO CART</button>
@@ -170,12 +174,12 @@
 				</div>
 			</section>
 		</div>
-		<section class="container-fluid blog">
-			<div class="blog_top">
+		<section class="blog container-fluid">
+			<div class="blog_top container">
 				<p style="color: #86b; letter-spacing: 5px;" class="blog_top_text">LASTEST</p>
 				<p style="font-size: 24px;" class="blog_top_text bottom">NEW & EVENTS</p>
 			</div>
-			<div class="blog_bot">
+			<div class="blog_bot container">
 				<div class="slide row">
 					<div class="col-4 blog_bot_post">
 						<div class="blog_bot_post_image">
@@ -306,17 +310,17 @@
 				</div>
 			</div>
 		</section>
-		<section class="container-fluid footer">
-			<div class="footer_top">
+		<section class="footer" style="width: 100%">
+			<div class="footer_top container">
 				<div class="row">
-					<div class="col-sm-12 col-lg-3 fotter_about">
+					<div class="col-sm-12 col-md-12 col-lg-3 fotter_about">
 						<p class="title">About Franco</p>
 						<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut facilis ipsa doloribus sequi repellendus quis.</p>
 						<p><i class="fab fa-twitter"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-behance"></i><i class="fas fa-globe"></i></p>
 					</div>
-					<div class="col-lg-1"></div>
-					<div class="col-sm-12 col-lg-4 footer_navigation">
+					<div class="col-lg-1 col-md-0 space"></div>
+					<div class="col-sm-12 col-md-6 col-lg-4 footer_navigation">
 						<p class="title">Navigation</p>
 						<hr>
 						<div class="row">
@@ -342,8 +346,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-1"></div>
-					<div class="col-sm-12 col-lg-3 footer_location">
+					<div class="col-lg-1 col-md-0 space"></div>
+					<div class="col-sm-12 col-md-6 col-lg-3 footer_location">
 						<p class="title">Shop Location</p>
 						<hr>
 						<p class="row">
@@ -356,19 +360,19 @@
 							<span class="col-1">
 								<i class="fas fa-phone-alt"></i>
 							</span>
-							<span class="col-10">+1 23456789</span>
+							<a class="col-10" style="color: #828282" href="tel:+1 23456789">+1 23456789</a>
 						</p>
 						<p class="row">
 							<span class="col-1">
 								<i class="far fa-envelope"></i>
 							</span>
-							<span class="col-10">contact@yourdomain.com</span>
+							<a class="col-10" style="color: #828282" href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
 						</p>
 					</div>
 				</div>
 			</div>
 			<hr>
-			<div class="footer_bot">
+			<div class="footer_bot container">
 				<div class="footer_bot_left">
 					<p>
 						<i class="far fa-copyright"></i> Copyright 2015 & Made with <i style="color: #ff4628" class="fas fa-heart"></i> by <span style="font-weight: bold; color: white;"> ArrowHiTech</span>
@@ -384,7 +388,7 @@
 				</div>
 			</div>
 		</section>
-	</article>
+	</div>
 </body>
 <script type="text/javascript">
 	$('.slide').slick({
@@ -416,6 +420,8 @@
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
+	  		// arrows: true,
+	  		dots: false,
 	      }
 	    }
 	  ]

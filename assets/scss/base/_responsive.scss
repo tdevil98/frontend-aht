@@ -2,16 +2,12 @@
 	.header{
 		&_top{
 			width: 100%;
-			text-align: center;
 			&_left{
-				float: none;
-				margin: 0;
+				
 			}
 			&_right{
-				float: none;
-				margin: 0;
 				.text{
-					display: inline;
+					display: none;
 				}
 			}
 		}
@@ -19,7 +15,17 @@
 }
 
 @media screen and (min-width: 576px) {
-	
+	.content{
+		.banner{
+			&_right{
+				&_bot{
+					&_text{
+						bottom: 30%;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px){
@@ -72,7 +78,7 @@
 		    &_menu{
 		    	li{
 		    		a{
-		    			padding: 10px;
+		    			margin: 0 10px;
 		    		}
 		    		&:not(.bars){
 			           display: block!important;
@@ -85,22 +91,32 @@
 		    }
 		    &_right{
 		    	display: block;
+		    	.icon{
+		    		display: none;
+		    	}
 		    }
 		}
 	}
 }
 
-@media screen and (max-width: 426px) {
-	
+@media screen and (max-width: 425px) {
+	.header{
+		&_bot{
+			&_logo{
+				width: 40%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.header{
 		&_bot{
-			text-align: center;
 			&_logo{
-				margin-bottom: 30px;
-				display: block;
+				// margin-bottom: 30px;
 			}
 		}
 	}
@@ -121,6 +137,7 @@
 	.footer{
 		&_bot{
 			&_left{
+				text-align: center;
 				float: none;
 			}
 			&_right{
@@ -132,7 +149,7 @@
 	}
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
 	.content{
 		.banner{
 			&_left{
@@ -144,8 +161,36 @@
 			}
 		}
 	}
+	.footer{
+		&_top{
+			.space{
+				display: none;
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 1200px){
-	
+@media screen and (max-width: 1199px){
+	.header{
+		&_bot{
+			position: relative;
+			&_menu{
+				position: absolute;
+				z-index: 1;
+			    top: 70px;
+			    height: 3000px;
+			    right: 0;
+			    width: 100%;
+			    ul{
+			    	li{
+			    		a{
+			    			color: white;
+			    		}
+			    	}
+			    }
+			}
+			&_right{
+			}
+		}
+	}
 }
